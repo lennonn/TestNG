@@ -3,7 +3,8 @@ package com.zl.lennon.regex;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.*;
 
 public class RegextTest {
 

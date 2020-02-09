@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.zl.instances.customelist;
+package com.zl.lennon.instances.customelist;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -56,7 +56,7 @@ public class CustomLinkedList<T> {
 			node.next=4;
 			customLinkedList.add(5, node);
 			
-			CustomLinkedList.Node node1=customLinkedList.new Node();
+			CustomLinkedList.Node node1=customLinkedList.new Node<Object>();
 			node.head=5;
 			node.data="ddd";
 			node.next=9;

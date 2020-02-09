@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.zl.instances.thread;
+package com.zl.lennon.instances.thread;
 
 /**
  * @author zlennon

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14978" started-at="2017-12-12T06:50:32Z" finished-at="2017-12-12T06:50:47Z">
+  <suite name="Suite" duration-ms="58" started-at="2019-08-11T15:11:22Z" finished-at="2019-08-11T15:11:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14978" started-at="2017-12-12T06:50:32Z" finished-at="2017-12-12T06:50:47Z">
-      <class name="com.zl.lennon.StrSubStringTest">
-        <test-method status="PASS" signature="run()[pri:0, instance:com.zl.lennon.StrSubStringTest@9225652]" name="run" duration-ms="14959" started-at="2017-12-12T14:50:32Z" finished-at="2017-12-12T14:50:47Z">
+    <test name="Test" duration-ms="58" started-at="2019-08-11T15:11:22Z" finished-at="2019-08-11T15:11:23Z">
+      <class name="com.zl.lennon.ListConvet">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.zl.lennon.ListConvet@6979e8cb]" name="test" duration-ms="22" started-at="2019-08-11T23:11:23Z" finished-at="2019-08-11T23:11:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- run -->
-      </class> <!-- com.zl.lennon.StrSubStringTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test -->
+      </class> <!-- com.zl.lennon.ListConvet -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

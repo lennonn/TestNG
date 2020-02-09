@@ -16,14 +16,14 @@
 		<!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
 
 		<xslt
-			in="D:\Workspace\Work_JeeOxygen\lennon\test-output\testng-results.xml"
-			style="D:\Workspace\Work_JeeOxygen\lennon\test-output\testng-results.xsl"
+			in="D:\IdeaProjects\testng\test-output\testng-results.xml"
+			style="D:\IdeaProjects\testng\test-output\testng-results.xsl"
 
-			out="D:\Workspace\Work_JeeOxygen\lennon\test-output\index1.html">
+			out="D:\IdeaProjects\testng\test-output\index1.html">
 
 			<!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
 
-			<param name="testNgXslt.outputDir" expression="D:\Workspace\Work_JeeOxygen\lennon\test-output\" />
+			<param name="testNgXslt.outputDir" expression="D:\IdeaProjects\testng\test-output" />
 
 			<classpath refid="test.classpath" />
 

@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.zl.lennon.AppTest"/>
+      <class name="com.zl.lennon.ListConvet"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

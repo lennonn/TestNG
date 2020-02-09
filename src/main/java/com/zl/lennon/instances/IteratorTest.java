@@ -24,10 +24,17 @@ public class IteratorTest {
 		list.add("name2");
 		list.add("name1");
 		//Iterator<String> it =list.iterator();
-		for(Iterator<String> it =list.iterator();it.hasNext();){
+/*		for(Iterator<String> it =list.iterator();it.hasNext();){
 			 String name =it.next();
 			 System.out.println(name);
-		}
+		}*/
+
+		Iterator<String> iterator=list.iterator();
+			while(iterator.hasNext()){
+				String name =iterator.next();
+				System.out.println(name);
+			}
+
 	}
 
 }

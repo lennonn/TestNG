@@ -7,7 +7,7 @@ package com.zl.lennon.interview;
  * @author zlennon
  *
  */
-public class Childern extends com.zl.interview.People {
+public class Childern extends People {
 		public Childern(){
 			System.out.println("子类无参数构造");
 		}

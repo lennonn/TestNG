@@ -1,11 +1,9 @@
 /**
  * 
  */
-package com.zl.instances.thread;
+package com.zl.lennon.instances.thread;
 
 import java.util.Date;
-
-import com.sun.org.apache.bcel.internal.generic.NEW;
 
 /**
  * @author zlennon

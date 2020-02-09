@@ -1,6 +1,6 @@
 package com.zl.lennon;
 
-import org.junit.Test;
+import org.testng.annotations.*;
 
 import java.util.ArrayList;
 import java.util.Collection;

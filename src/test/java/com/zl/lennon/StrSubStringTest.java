@@ -1,6 +1,7 @@
 package com.zl.lennon;
 
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.*;
 
 public class StrSubStringTest {
 	@Test
