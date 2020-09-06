@@ -1,34 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="lennon" basedir=".">
+<project name="TestAutomation" basedir=".">
+    <property name="LIB" value="${basedir}/lib" />
+    <property name="BIN" value="${basedir}/bin" />
+    <path id="master-classpath">
+        <pathelement location="${BIN}" />
+        <fileset dir="${LIB}" includes="*.jar"/>
+    </path>
 
-	<property name="lib.dir" value="lib" />
-
-	<path id="test.classpath">
-
-		<!-- adding the saxon jar to your classpath -->
-
-		<fileset dir="${lib.dir}" includes="*.jar" />
-
-	</path>
-
-	<target name="transform">
-
-		<!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
-
-		<xslt
-			in="D:\IdeaProjects\testng\test-output\testng-results.xml"
-			style="D:\IdeaProjects\testng\test-output\testng-results.xsl"
-
-			out="D:\IdeaProjects\testng\test-output\index1.html">
-
-			<!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
-
-			<param name="testNgXslt.outputDir" expression="D:\IdeaProjects\testng\test-output" />
-
-			<classpath refid="test.classpath" />
-
-		</xslt>
-
-	</target>
-
+    <target name="generateReport">
+        <delete dir="${basedir}/testng-xslt">
+        </delete>
+        <mkdir dir="${basedir}/testng-xslt">
+        </mkdir>
+        <xslt in="${basedir}/test-output/testng-results.xml"
+              style="${basedir}/test-output/testng-results.xsl"
+              out="${basedir}/testng-xslt/index.html">
+            <param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir" />
+            <param expression="true" name="testNgXslt.sortTestCaseLinks" />
+            <param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+            <param expression="true" name="testNgXslt.showRuntimeTotals" />
+            <classpath refid="master-classpath">
+            </classpath>
+        </xslt>
+    </target>
 </project>

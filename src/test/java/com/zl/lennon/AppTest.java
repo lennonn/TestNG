@@ -1,11 +1,13 @@
 package com.zl.lennon;
 
-import org.junit.Test;
+
+import org.testng.annotations.Test;
 
 public class AppTest {
 
   @Test
-  public void main() {
-    throw new RuntimeException("Test not implemented");
+  public void test() {
+    String[] args = {};
+    App.main(args);
   }
 }
