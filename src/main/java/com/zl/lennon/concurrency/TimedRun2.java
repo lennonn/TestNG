@@ -3,8 +3,8 @@ package com.zl.lennon.concurrency;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+import static com.zl.lennon.concurrency.LaunderThrowable.launderThrowable;
 import static java.util.concurrent.Executors.newScheduledThreadPool;
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
 
 /**
  * TimedRun2

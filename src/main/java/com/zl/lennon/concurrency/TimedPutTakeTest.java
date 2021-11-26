@@ -2,6 +2,8 @@ package com.zl.lennon.concurrency;
 
 import java.util.concurrent.CyclicBarrier;
 
+import static org.testng.Assert.assertEquals;
+
 /**
  * TimedPutTakeTest
  * <p/>

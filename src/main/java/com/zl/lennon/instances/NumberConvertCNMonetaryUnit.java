@@ -92,6 +92,6 @@ public class NumberConvertCNMonetaryUnit {
 	public static void main(String[] args) {
 		NumberConvertCNMonetaryUnit numberConvertCNMonetaryUnit = new NumberConvertCNMonetaryUnit();
 		System.out.println(numberConvertCNMonetaryUnit
-				.convertNumber(new BigDecimal(10000000000.00)));
+				.convertNumber(new BigDecimal(1688.9999)));
 	}
 }

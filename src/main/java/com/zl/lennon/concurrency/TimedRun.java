@@ -2,7 +2,7 @@ package com.zl.lennon.concurrency;
 
 import java.util.concurrent.*;
 
-import static net.jcip.examples.LaunderThrowable.launderThrowable;
+import static com.zl.lennon.concurrency.LaunderThrowable.launderThrowable;
 
 /**
  * TimedRun

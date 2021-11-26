@@ -1,11 +1,14 @@
 package com.zl.lennon.concurrency;
 
+
 import junit.framework.TestCase;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import static org.testng.Assert.assertEquals;
 
 /**
  * TestingThreadFactory

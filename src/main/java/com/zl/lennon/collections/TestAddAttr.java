@@ -1,6 +1,9 @@
 package com.zl.lennon.collections;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class TestAddAttr {
@@ -37,4 +40,12 @@ public class TestAddAttr {
         System.out.println(testAddAttr.getInfos().toString());
     }
 
+    @Test
+    public void testListAddAll(){
+        List<String> list1 = Collections.EMPTY_LIST;
+        List<String> list2 =new ArrayList<>();
+        list2.add("sdfdsf");
+        list1.addAll(list2);
+        Collections.emptyList();
+    }
 }
