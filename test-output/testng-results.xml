@@ -6,16 +6,16 @@
     <groups>
     </groups>
     <test started-at="2020-02-23T14:25:29 CST" name="java-language" finished-at="2020-02-23T14:25:30 CST" duration-ms="921">
-      <class name="com.zl.lennon.leetcode.IntegerReverseTest">
-        <test-method signature="testReverse()[pri:0, instance:com.zl.lennon.leetcode.IntegerReverseTest@77cf3f8b]" started-at="2020-02-23T14:25:29 CST" name="testReverse" finished-at="2020-02-23T14:25:30 CST" duration-ms="337" status="PASS">
+      <class name="IntegerReverseTest">
+        <test-method signature="testReverse()[pri:0, instance:IntegerReverseTest@77cf3f8b]" started-at="2020-02-23T14:25:29 CST" name="testReverse" finished-at="2020-02-23T14:25:30 CST" duration-ms="337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testReverse -->
-        <test-method signature="testStringReverse()[pri:0, instance:com.zl.lennon.leetcode.IntegerReverseTest@77cf3f8b]" started-at="2020-02-23T14:25:30 CST" name="testStringReverse" finished-at="2020-02-23T14:25:30 CST" duration-ms="6" status="PASS">
+        <test-method signature="testStringReverse()[pri:0, instance:IntegerReverseTest@77cf3f8b]" started-at="2020-02-23T14:25:30 CST" name="testStringReverse" finished-at="2020-02-23T14:25:30 CST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStringReverse -->
-      </class> <!-- com.zl.lennon.leetcode.IntegerReverseTest -->
+      </class> <!-- IntegerReverseTest -->
     </test> <!-- java-language -->
   </suite> <!-- Default Suite -->
 </testng-results>

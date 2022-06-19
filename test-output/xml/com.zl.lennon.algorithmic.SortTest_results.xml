@@ -6,7 +6,7 @@
            skipped="0"
            time="0.801">
   <properties />
-            <testcase name="testBubbleSort" time="0.278" classname="com.zl.lennon.algorithmic.SortTest">
+            <testcase name="testBubbleSort" time="0.278" classname="SortTest">
                 <failure type="java.lang.AssertionError"
                   message="expected [1] but found [1581319094298]"
               >
@@ -16,7 +16,7 @@
   org.testng.Assert.assertEquals(Assert.java:118)
   org.testng.Assert.assertEquals(Assert.java:729)
   org.testng.Assert.assertEquals(Assert.java:739)
-  com.zl.lennon.algorithmic.SortTest.testBubbleSort(SortTest.java:16)
+  SortTest.testBubbleSort(SortTest.java:16)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,11 +50,11 @@
           </testcase>
   
   
-            <testcase name="mergeSort" time="0.037" classname="com.zl.lennon.algorithmic.SortTest" />
-                <testcase name="insertionSort" time="0.061" classname="com.zl.lennon.algorithmic.SortTest" />
-                <testcase name="shellSort" time="0.018" classname="com.zl.lennon.algorithmic.SortTest" />
-                <testcase name="quickSort" time="0.028" classname="com.zl.lennon.algorithmic.SortTest" />
-                <testcase name="testSelectionSort" time="0.116" classname="com.zl.lennon.algorithmic.SortTest" />
-                <testcase name="heapSort" time="0.263" classname="com.zl.lennon.algorithmic.SortTest" />
+            <testcase name="mergeSort" time="0.037" classname="SortTest" />
+                <testcase name="insertionSort" time="0.061" classname="SortTest" />
+                <testcase name="shellSort" time="0.018" classname="SortTest" />
+                <testcase name="quickSort" time="0.028" classname="SortTest" />
+                <testcase name="testSelectionSort" time="0.116" classname="SortTest" />
+                <testcase name="heapSort" time="0.263" classname="SortTest" />
       
 </testsuite>

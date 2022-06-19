@@ -3,10 +3,10 @@
 <suite name="algorithmicSuite">
   <test name="sort">
     <classes>
-      <class name="com.zl.lennon.algorithmic.SortTest"/>
+      <class name="SortTest"/>
     </classes>
   </test> <!-- Test -->
     <listeners>
-        <listener class-name="com.zl.lennon.test.TestNGListener"/>
+        <listener class-name="com.zl.test.TestNGListener"/>
     </listeners>
 </suite> <!-- Suite -->

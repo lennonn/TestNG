@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="java-language(failed)">
     <classes>
-      <class name="com.zl.lennon.leetcode.IntegerReverseTest">
+      <class name="IntegerReverseTest">
         <methods>
           <include name="testReverse"/>
         </methods>
-      </class> <!-- com.zl.lennon.leetcode.IntegerReverseTest -->
+      </class> <!-- IntegerReverseTest -->
     </classes>
   </test> <!-- java-language(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
