@@ -1,11 +1,10 @@
 package com.zl.collections;
 
 import com.alibaba.fastjson2.JSONObject;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 

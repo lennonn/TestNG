@@ -1,9 +1,8 @@
 package com.zl.test;
+
 import org.testng.TestListenerAdapter;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -11,8 +10,8 @@ import java.util.Random;
 
 public class TestNGListener extends TestListenerAdapter {
     public static void main(String[] args) throws InterruptedException {
-        LocalDate start = LocalDate.of(2021, 10, 01);
-        LocalDate end = LocalDate.of(2021, 10, 07);
+        LocalDate start = LocalDate.of(2022, 11, 01);
+        LocalDate end = LocalDate.of(2022, 11, 17);
         LocalDate now = LocalDate.now();
         if(now.compareTo(start)>=0&&now.compareTo(end)<=0){
             Thread life=  new Thread(() -> {
@@ -27,7 +26,7 @@ public class TestNGListener extends TestListenerAdapter {
             life.start();
             life.join();
             work.start();
-            work.join();
+            //work.join();
         }else {
             System.out.println("努力搬砖");
         }

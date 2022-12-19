@@ -1,4 +1,4 @@
-package com.zl.algorithmic;
+package com.zl.datastructure.algorithmic;
 
 import com.zl.test.TestNGListener;
 import io.qameta.allure.*;

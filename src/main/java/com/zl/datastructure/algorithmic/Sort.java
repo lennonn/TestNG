@@ -1,4 +1,4 @@
-package com.zl.algorithmic;
+package com.zl.datastructure.algorithmic;
 
 import org.apache.commons.lang3.RandomUtils;
 

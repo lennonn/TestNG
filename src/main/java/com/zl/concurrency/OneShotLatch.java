@@ -1,15 +1,18 @@
+/*
 package com.zl.concurrency;
 
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 
+*/
 /**
  * OneShotLatch
  * <p/>
  * Binary latch using AbstractQueuedSynchronizer
  *
  * @author Brian Goetz and Tim Peierls
- */
+ *//*
+
 @ThreadSafe
 public class OneShotLatch {
     private final Sync sync = new Sync();
@@ -35,3 +38,4 @@ public class OneShotLatch {
         }
     }
 }
+*/

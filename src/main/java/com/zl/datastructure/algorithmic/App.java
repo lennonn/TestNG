@@ -1,4 +1,4 @@
-package com.zl.algorithmic;
+package com.zl.datastructure.algorithmic;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

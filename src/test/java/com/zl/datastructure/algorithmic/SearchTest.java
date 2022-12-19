@@ -1,4 +1,4 @@
-package com.zl.algorithmic;
+package com.zl.datastructure.algorithmic;
 
 import org.junit.Test;
 import org.testng.Assert;

@@ -1,4 +1,4 @@
-package com.zl.algorithmic;
+package com.zl.datastructure.algorithmic;
 
 public class Factorial {
 

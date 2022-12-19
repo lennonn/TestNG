@@ -27,6 +27,7 @@ public class ConcurrentStack<E> {
         Node<E> oldHead;
         Node<E> newHead;
         do {
+
             oldHead = top.get();
             if (oldHead == null)
                 return null;

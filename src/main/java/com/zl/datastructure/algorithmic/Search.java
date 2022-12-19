@@ -1,4 +1,4 @@
-package com.zl.algorithmic;
+package com.zl.datastructure.algorithmic;
 
 public class Search {
     public static int binarySearch(int[] nums, int key) {
