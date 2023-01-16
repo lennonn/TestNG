@@ -18,7 +18,7 @@ public class CallableImpl implements Callable<String> {
     @Override
     public String call() throws Exception {
         // 任务阻塞 1 秒
-        Thread.sleep(1000);
+        Thread.sleep(6600000);
         return this.acceptStr + " append some chars and return it!";
     }
 

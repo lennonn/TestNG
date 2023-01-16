@@ -11,7 +11,7 @@ public class VarHandleTest {
     private String reflectStr;    //通过反射生成句柄的变量
     private String[] arrayStr = new String[10];    //数组变量
 
-    private static final VarHandle plainVar;    //普通变量句柄
+    private static VarHandle plainVar;    //普通变量句柄
     private static final VarHandle staticVar;    //静态变量句柄
     private static final VarHandle reflectVar;    //反射字段句柄
     private static final VarHandle arrayVar;    //数组句柄
@@ -29,7 +29,11 @@ public class VarHandleTest {
     }
 
     @Test
-    public void test(){
-       new VarHandleTest();
+    public void test() throws NoSuchFieldException, IllegalAccessException {
+        MethodHandles.Lookup l = MethodHandles.lookup();
+        VarHandleTest varHandleTest = new VarHandleTest();
+        System.out.println(this.plainStr);
+        plainVar.weakCompareAndSet(this,null,"test");
+        System.out.println(this.plainStr);
     }
 }

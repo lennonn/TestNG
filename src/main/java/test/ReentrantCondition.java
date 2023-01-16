@@ -8,12 +8,12 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantCondition {
-    public void threadTest() throws InterruptedException {
+    public void threadTest() {
         ReentrantLock lock = new ReentrantLock();
         Condition conditiona = lock.newCondition();
         Condition conditionb = lock.newCondition();
         Condition conditionc = lock.newCondition();
-        AtomicInteger num = new AtomicInteger(4);
+        AtomicInteger num = new AtomicInteger(3);
         Thread A = new Thread(()->{
             for (int i = 0; i < 10; i++) {
                 lock.lock();
@@ -38,6 +38,7 @@ public class ReentrantCondition {
                         conditionb.await();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
+
                     }
                 }
                 System.out.print("B");
@@ -58,30 +59,23 @@ public class ReentrantCondition {
                 }
                 num.getAndIncrement();
                 System.out.println("C");
+                try {
+                    Thread.sleep(10000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 conditiona.signal();
                 lock.unlock();
             }
         });
-
-        B.start();
+        A.setName("A");
         A.start();
+        B.setName("B");
+        B.start();
+        C.setName("C");
         C.start();
     }
 
-    public void stringTest(){
-        List<String> lists =new ArrayList<>();
-        lists.add("abc123cc");
-        lists.add("ab123cd");
-        for (int i = 0; i <lists.size() ; i++) {
-            byte[] first = lists.get(i).getBytes(StandardCharsets.UTF_8);
-            byte[] second = lists.get(i).getBytes(StandardCharsets.UTF_8);
-            for(int j=0;j<first.length;j++){
-                if(first[j]==second[j]){
-
-                }
-            }
-        }
-    }
 
     public static void main(String[] args) throws InterruptedException {
         ReentrantCondition test =new ReentrantCondition();

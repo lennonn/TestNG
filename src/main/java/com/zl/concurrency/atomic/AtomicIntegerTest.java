@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class AtomicIntegerTest {
-    private  AtomicInteger mum = new AtomicInteger(0);;
+    private  AtomicInteger mum = new AtomicInteger(0);
     private int threadCounts=10;
 
     public void increase(int j) {
