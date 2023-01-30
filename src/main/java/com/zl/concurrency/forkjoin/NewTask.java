@@ -29,10 +29,9 @@ public class NewTask extends RecursiveAction
     {
         // create subtasks
         List<NewTask> subtasks = new ArrayList<NewTask>();
-        for (int i = 0; i <10000000 ; i++) {
-            NewTask subtask1 = new NewTask(this.Load / 2);
+        while (Load>0){
+            NewTask subtask1 = new NewTask(this.Load=this.Load / 2);
             subtasks.add(subtask1);
-
         }
 
 
